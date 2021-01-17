@@ -7,11 +7,13 @@ import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
-public class RegisterAPI {
+public interface RegisterAPI {
     @FormUrlEncoded
-    @POST("update.php")
-    Call<Sampler.Value> ubah(String pompa, @Field("id") String id,
-                             @Field("value") String value) {
-        return null;
-    }
+    @POST("/create.php")
+    Call<Sampler.Value> area(@Field("id") String id,
+                             @Field("namaarea") String namaarea,
+                             @Field("luas") String luas,
+                             @Field("kebair") String air,
+                             @Field("kelembaban") String kelembaban,
+                             @Field("tanaman") String tanaman);
 }

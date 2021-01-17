@@ -39,7 +39,6 @@ public class waterGate extends AppCompatActivity {
         RegisterAPI api = retrofit.create(RegisterAPI.class);
         Call<Sampler.Value> call = api.ubah(pompa, pintu1, pintu2);*/
 
-
         swPompa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,10 +58,11 @@ public class waterGate extends AppCompatActivity {
             public void onClick(View v) {
                 if (swGate1.isChecked()){
                     //input nilai 1
-                    Toast.makeText(getApplicationContext(), "Gate 1 Membuka", Toast.LENGTH_LONG).show();
+
+                    Toast.makeText(getApplicationContext(), "Pintu Air 1 Membuka", Toast.LENGTH_LONG).show();
                 }else{
                     //input nilai 0
-                    Toast.makeText(getApplicationContext(), "Gate 1 Menutup", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Pintu Air 1 Menutup", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -72,10 +72,10 @@ public class waterGate extends AppCompatActivity {
             public void onClick(View v) {
                 if (swGate2.isChecked()){
                     //input nilai 1
-                    Toast.makeText(getApplicationContext(), "Gate 2 Membuka", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Pintu Air 2 Membuka", Toast.LENGTH_LONG).show();
                 }else{
                     //input nilai 0
-                    Toast.makeText(getApplicationContext(), "Gate 2 Menutup", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Pintu Air 2 Menutup", Toast.LENGTH_LONG).show();
                 }
             }
         });

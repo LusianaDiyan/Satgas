@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Grafik Data Kelembaban Tanah"
+        android:text="Grafik Kelembaban Tanah "
         android:gravity="left"
         android:layout_marginLeft="10dp"
         android:textSize="20sp"
