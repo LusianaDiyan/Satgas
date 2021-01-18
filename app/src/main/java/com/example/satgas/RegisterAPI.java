@@ -1,7 +1,5 @@
 package com.example.satgas;
 
-import android.renderscript.Sampler;
-
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -9,11 +7,11 @@ import retrofit2.http.POST;
 
 public interface RegisterAPI {
     @FormUrlEncoded
-    @POST("/create.php")
-    Call<Sampler.Value> area(@Field("id") String id,
-                             @Field("namaarea") String namaarea,
-                             @Field("luas") String luas,
-                             @Field("kebair") String air,
-                             @Field("kelembaban") String kelembaban,
-                             @Field("tanaman") String tanaman);
+    @POST("/insert.php")
+    Call<value> area(@Field("id") String id,
+                             @Field("nama_area") String nama,
+                             @Field("luas_area") String luas,
+                             @Field("kebutuhan_air") String air,
+                             @Field("Moisture") String kelembaban,
+                             @Field("jenis_tanaman") String tanaman);
 }

@@ -19,6 +19,19 @@
         android:layout_marginTop="120dp"
         android:textColor="@color/colorPrimaryDark"/>
     <EditText
+        android:id="@+id/idArea"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/form"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:padding="8dp"
+        android:hint="ID Area"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark" />
+    <EditText
         android:id="@+id/namaArea"
         android:inputType="text"
         android:layout_width="match_parent"
