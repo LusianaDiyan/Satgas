@@ -41,7 +41,7 @@ public class waterMonitoring extends AppCompatActivity {
             lineChart.getData().notifyDataChanged();
             lineChart.notifyDataSetChanged();
         } else {
-            set1 = new LineDataSet(values, "Sample Data");
+            set1 = new LineDataSet(values, "Monitoring Data");
             set1.setDrawIcons(false);
             set1.enableDashedLine(10f, 5f, 0f);
             set1.enableDashedHighlightLine(10f, 5f, 0f);
@@ -73,10 +73,10 @@ public class waterMonitoring extends AppCompatActivity {
             lineChart.getData().notifyDataChanged();
             lineChart.notifyDataSetChanged();
         } else {
-            set1 = new LineDataSet(values, "Sample Data");
+            set1 = new LineDataSet(values, "Monitoring Data");
             set1.setDrawIcons(false);
-            set1.enableDashedLine(10f, 5f, 0f);
-            set1.enableDashedHighlightLine(10f, 5f, 0f);
+            set1.enableDashedLine(10f, 15f, 0f);
+            set1.enableDashedHighlightLine(10f, 15f, 0f);
             set1.setColor(Color.DKGRAY);
             set1.setCircleColor(Color.DKGRAY);
             set1.setLineWidth(1f);

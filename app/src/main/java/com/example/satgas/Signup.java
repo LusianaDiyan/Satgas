@@ -74,7 +74,7 @@ public class Signup extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<value> call, Throwable t) {
-                Toast.makeText(Signup.this, "Jaringan Error!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Signup.this, "Registrasi sedang diproses!", Toast.LENGTH_SHORT).show();
             }
         });
 

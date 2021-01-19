@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.satgas">
-    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/satgas"
@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".dataSensor"></activity>
+        <activity android:name=".controlView"></activity>
+        <activity android:name=".dataSensor" />
         <activity android:name=".soilMonitoring" />
         <activity android:name=".waterMonitoring" />
         <activity android:name=".waterGate" />
@@ -24,5 +25,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

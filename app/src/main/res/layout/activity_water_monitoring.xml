@@ -14,8 +14,7 @@
     android:text="WATER MONITORING"
     android:gravity="center"
     android:textSize="30sp"
-    android:layout_marginTop="80dp"
-    android:layout_marginBottom="30dp"
+    android:layout_marginTop="50dp"
     android:textColor="@android:color/black"
     android:textStyle="bold"/>
     <TextView
@@ -26,15 +25,97 @@
         android:layout_marginLeft="10dp"
         android:textSize="20sp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:textColor="@android:color/black"
         android:textStyle="bold"/>
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/lineChart"
         android:minHeight="200dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rectanglee"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tips Pengairan Tanaman 1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengairan perlu dilakukan penanganan secara tepat, yakni kapan tanaman membutuhkan air dan kapan tanaman tidak membutuhkan air serta berapa volume air yang dibutuhkan oleh tanaman."
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rectanglee"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tips Pengairan Tanaman 2"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intensitas pengairan sebaiknya disesuaikan dengan kondisi tanaman yang sedang dibudidayakan, jangan sampai pengairan yang dilakukan menyebabkan kondisi tanah menjadi terlalu lembab."
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rectanglee"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tips Pengairan Tanaman 3"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Air sangat berpengaruh terhadap produktivitas tanaman sehingga pengairan yang baik dapat meningkatkan produktivitas tanaman."
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
